@@ -22,7 +22,7 @@ We backtest the strategies tweaking the parameters in 3 ways:
 2. Long short with skip period: For the above strategy we add 5 skip_days between the lookback and the holding periods, to safeguard against any microstructure effects (bid-ask spread, lead-lag effect, short-term price pressure) affecting the inference
 3. Long only: Only long trading signals are generated for top 20 percentile with above-used lookback, holding and skip periods
 
-#### 3.1 Long-short cross-sectional momentum strategy
+### 3.1 Long-short cross-sectional momentum strategy
 Long trading signals are generated for top 10 percentile and short signals for bottom 10 percentile with
 a. Lookback days = 180
 b. Holding days = 41
@@ -39,7 +39,7 @@ Strategy logic:
 
 The transaction cost is taken as 0.1%.
 
-#### 3.2 Long-short cross-sectional momentum strategy with skip-days
+### 3.2 Long-short cross-sectional momentum strategy with skip-days
 Long trading signals are generated for top 10 percentile and short signals for bottom 10 percentile with: 
 a. Lookback days = 175
 b. Skip days = 5
@@ -55,7 +55,7 @@ Strategy logic:
 
 The transaction cost is taken as 0.1%.
 
-#### 3.3 Long-only cross-sectional momentum strategy
+### 3.3 Long-only cross-sectional momentum strategy
 Long only strategy on top 20 percentile stocks with:
 a. Lookback days = 175
 b. Skip days = 5
